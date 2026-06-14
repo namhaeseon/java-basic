@@ -1,0 +1,27 @@
+package com.itheima.logicoperator;
+
+public class LogicoperatorDemo3 {
+    static void main(String[] args) {
+        //1. &&
+        //运行结果和单个&是一样的
+        //表示两边都为真,结果才是真
+        System.out.println(true && true);
+        System.out.println(false && true);
+        System.out.println(true && false);
+        System.out.println(false && false);
+        // || 短路或
+        System.out.println(true || true);
+        System.out.println(false || true);
+        System.out.println(true || false);
+        System.out.println(false || false);
+
+        //3.短路逻辑运算符具有短路效果
+        //简单理解:当左边的表达式能确定最终的结果,那么右边就不会参与运行了
+        int a = 10;
+        int b = 10;
+        boolean result = ++a <5 && ++b <5;
+        System.out.println(result); // false
+        System.out.println(a);//11
+        System.out.println(b);//10
+    }
+}
