@@ -1,0 +1,16 @@
+package com.itheima.test;
+
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+
+public class Test3 {
+    static void main(String[] args) {
+        ArrayList<Character> list = new ArrayList<>();
+        list.add('a');
+        list.add('b');
+        list.add('c');
+        System.out.println(list);
+
+    }
+
+}
