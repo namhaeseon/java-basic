@@ -1,15 +1,16 @@
-package com.itheima.a01abstractdemo1;
+package com.itheima.a02interfacedemo2;
 
-public abstract class Animal {
+public abstract class Person {
+    //1.建父类Person(姓名,年龄)
     private String name;
     private int age;
 
-    public Animal(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public Person() {
     }
 
-    public Animal() {
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public String getName() {
@@ -27,9 +28,4 @@ public abstract class Animal {
     public void setAge(int age) {
         this.age = age;
     }
-
-    public void drink(){
-        System.out.println(getName() + "在喝水");
-    }
-   public abstract void eat();
 }
